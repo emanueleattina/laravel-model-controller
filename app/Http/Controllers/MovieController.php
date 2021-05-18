@@ -14,6 +14,6 @@ class MovieController extends Controller {
         // quindi movies sarà un array di oggetti movie
         $movies = Movie::all();
 
-        return view('movies', compact('movies'));
+        return view('movies', compact('movies', 'title_page'));
     }
 }
